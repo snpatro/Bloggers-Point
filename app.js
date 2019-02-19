@@ -9,7 +9,7 @@ var bodyParser  = require("body-parser"),
     LocalStrategy         = require("passport-local"),
     passportLocalMongoose = require("passport-local-mongoose");
     //app config
-    mongoose.connect("mongodb://localhost/RestBlog");
+    mongoose.connect("mongodb+srv://sachibsw:<PASSWORD>@cluster0-qv15n.mongodb.net/test?retryWrites=true");
     app.set("view engine","ejs");
     app.use(express.static("public"));
     app.use(methodOverride("_method"));
